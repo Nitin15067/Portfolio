@@ -3,12 +3,13 @@ import CTA from './CTA';
 import HeaderSocials from './HeaderSocials';
 import './header.css';
 
-const Header = () => {
+const Header = (props) => {
+    const {data} = props;
   return (
     <header id="home">
       <div className="container header__container">
         <h5>Hello I'm</h5>
-        <h1>Christian Montero</h1>
+        <h1>{data?.firstName} {data?.lastName}</h1>
         <h5 className="text-light">Full-Stack Developer</h5>
         <CTA />
         <a href="#contact" className="scroll__down">
