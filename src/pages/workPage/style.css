@@ -1,0 +1,44 @@
+.page-wrapper .title {
+    color: var(--Pearl-Black, #000);
+    font-family: Manrope;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 76.8px; /* 120% */
+}
+
+.page-wrapper .hero-section {
+    display: flex;
+    padding-right: 240px;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.page-wrapper .hero-section .container {
+    display: flex;
+    max-width: 800px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    flex: 1 0 0;
+}
+
+.page-wrapper .hero-section .container .description span {
+    color: var(--Pearl-Black, #000);
+    font-family: Manrope;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 44.8px; /* 140% */
+}
+
+.project-list-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 40px;
+    align-self: stretch;
+    flex-wrap: wrap;
+}

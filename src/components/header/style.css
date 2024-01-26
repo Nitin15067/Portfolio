@@ -1,0 +1,118 @@
+.header-wrapper {
+    -webkit-backdrop-filter: blur(40px) brightness(100%);
+    backdrop-filter: blur(40px) brightness(100%);
+    background-color: var(--pearlwhite-25);
+    box-shadow: var(--bg-blur-40);
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+
+.logo {
+    display: flex;
+    width: 81px;
+    height: 30px;
+}
+
+.navbar {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    gap: 40px;
+    justify-content: center;
+    min-width: 245px;
+    position: relative;
+}
+
+.text-wrapper {
+    color: var(--pearlblack);
+    font-family: var(--pearl-manrope-medium-18-font-family);
+    font-size: var(--pearl-manrope-medium-18-font-size);
+    font-style: var(--pearl-manrope-medium-18-font-style);
+    font-weight: var(--pearl-manrope-medium-18-font-weight);
+    letter-spacing: var(--pearl-manrope-medium-18-letter-spacing);
+    line-height: var(--pearl-manrope-medium-18-line-height);
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+h4 {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+h4 a {
+    color: var(--Pearl-Black, #000);
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25.2px;
+}
+
+.CTA {
+    all: unset;
+    align-items: flex-start;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    position: relative;
+}
+
+.header-wrapper .btn {
+    all: unset;
+    align-items: center;
+    background-color: var(--pearlblack);
+    border-radius: 64px;
+    box-sizing: border-box;
+    display: inline-flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    overflow: hidden;
+    padding: 8px 24px;
+    position: relative;
+}
+
+.div {
+    align-items: center;
+    align-self: stretch;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 8px;
+    position: relative;
+}
+
+.text-wrapper-2 {
+    color: var(--pearlwhite);
+    font-family: var(--pearl-manrope-medium-18-font-family);
+    font-size: var(--pearl-manrope-medium-18-font-size);
+    font-style: var(--pearl-manrope-medium-18-font-style);
+    font-weight: var(--pearl-manrope-medium-18-font-weight);
+    letter-spacing: var(--pearl-manrope-medium-18-letter-spacing);
+    line-height: var(--pearl-manrope-medium-18-line-height);
+    margin-top: -1px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+}
+
+.SVG {
+    height: 16px;
+    position: relative;
+    width: 16px;
+}

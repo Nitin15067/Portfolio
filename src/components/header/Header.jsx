@@ -1,24 +1,48 @@
-import React from 'react';
-import CTA from './CTA';
-import HeaderSocials from './HeaderSocials';
-import './header.css';
+import PropTypes from "prop-types";
+import React from "react";
+import "./style.css";
+import Logo from "../../assets/pearl.png";
+import arrowIcon from "../../assets/arrow1.png";
+import { Link, useNavigate } from "react-router-dom";
 
-const Header = (props) => {
-    const {data} = props;
-  return (
-    <header id="home">
-      <div className="container header__container">
-        <h5>Hello I'm</h5>
-        <h1>{data?.firstName} {data?.lastName}</h1>
-        <h5 className="text-light">Full-Stack Developer</h5>
-        <CTA />
-        <a href="#contact" className="scroll__down">
-          Scroll Down
-        </a>
-        <HeaderSocials />
-      </div>
-    </header>
-  );
+export const Header = () => {
+    const navigate = useNavigate();
+
+    return (
+        <div className="header-wrapper">
+            <img
+                className="logo"
+                alt="Logo"
+                onClick={() => navigate("/")}
+                src={Logo}
+            />
+            <div className="navbar">
+                <div className="nav-item">
+                    <h4>
+                        <Link to="/work">Work</Link>
+                    </h4>
+                </div>
+                <div className="div-wrapper">
+                    <h4>
+                        <Link to="/about">About</Link>
+                    </h4>
+                </div>
+                <div className="div-wrapper">
+                    <h4>
+                        <Link to="/contact">Contact</Link>
+                    </h4>
+                </div>
+            </div>
+            <button className="CTA">
+                <button className="btn">
+                    <div className="div">
+                        <div className="text-wrapper-2">Let’s Talk</div>
+                        <img className="SVG" alt="Svg" src={arrowIcon} />
+                    </div>
+                </button>
+            </button>
+        </div>
+    );
 };
 
-export default Header;
+Header.propTypes = {};

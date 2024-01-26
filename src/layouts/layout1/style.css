@@ -1,0 +1,12 @@
+.layout-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+.layout-wrapper .layout-inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
